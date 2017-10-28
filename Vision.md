@@ -28,9 +28,16 @@ Reference URLs:
 * Create vision dir.
     * ```mkdir -p ~/vision```
 
-
-```sudo apt-get update && sudo apt-get -y install git cmake python-pip libopencv-dev```
+* <pre>sudo apt-get update && sudo apt-get -y install
+   git \
+   cmake \
+   python-pip \
+   libnss-mdns \
+   python-setuptools \
+   python-opencv \
+   libopencv-dev \
+   python-numpy \
+   python-dev
+   </pre>
     
-```sudo pip install virtualenv```
-    
-```cd ~/vision; virtualenv venv```
+```sudo pip install enum```
