@@ -31,7 +31,7 @@ Reference URLs:
     <pre>mkdir -p ~/vision</pre>
 
 * Install a bunch of packages:
-    <pre> sudo apt-get update && sudo apt-get -y install git cmake libjpeg8-dev</pre>
+    ```sudo apt-get update && sudo apt-get -y install git cmake libjpeg8-dev ```
 
 * Install mjpg-streamer
     <pre> 
