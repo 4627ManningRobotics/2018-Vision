@@ -1,0 +1,22 @@
+Pi0W daughtercard
+
+Parts
+
+* Power supply  15V input, 5V output
+	* 	[MIC39100](https://www.digikey.ca/product-detail/en/microchip-technology/MIC39100-5.0WS-TR/MIC39100-5.0WS-CT-ND/7671937)
+* LED driver from GPIO
+	* [2n7002](https://www.digikey.ca/product-detail/en/nexperia-usa-inc/2N7002215/1727-2764-1-ND/763366)
+* LED's [lm / mcd calculator](http://www.rapidtables.com/calc/light/mcd-to-lumen-calculator.htm)
+	* [The andymark LED ring we're used to](http://www.andymark.com/product-p/am-3597.htm)
+		* approx 1485mcd @ 120deg
+		* ea 4.67lm
+		* total 69lm and 100mA@12v = 1.2W
+	* [4700mcd](https://www.digikey.ca/product-detail/en/qt-brightek-qtb/QBLP679E-IGK/1516-1127-1-ND/4814854)
+		* 3 LEDs/pkg, 60mA@3.3v
+		* ea 14.75lm
+	* [1800mcd](https://www.digikey.ca/product-detail/en/tt-electronics-optek-technology/OVSA1GBC2R8/365-1556-1-ND/2203775)
+		* 30mA@3.3v
+		* ea 5.6lm
+	* [2125mcd](https://www.digikey.ca/product-detail/en/broadcom-limited/ASMT-SGB5-NW703/516-3483-1-ND/6677153)
+		* 30mA@3.2v
+		* ea 6.67lm
