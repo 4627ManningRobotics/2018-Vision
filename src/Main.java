@@ -55,7 +55,7 @@ public class Main {
                         ArrayList<MatOfPoint> contours = new ArrayList<>();
 
                         Imgproc.cvtColor(frame, frame, Imgproc.COLOR_BGR2HSV);
-                        Core.inRange(frame, new Scalar(69.60431654676259, 153.64208633093523, 52.74280575539569), new Scalar(99.69696969696969, 255, 255), frame);
+                        Core.inRange(frame, new Scalar(71.22302158273381, 146.76258992805754, 61.915467625899275), new Scalar(86.7911714770798, 220.36502546689306, 255), frame);
                         findContours(frame, contours);
 
                         Graphics g = img.getGraphics();
