@@ -7,7 +7,7 @@ Reference URLs:
 ***
 
 * Download Raspbian
-* on a linux machine, blow it onto a microSD:
+* on a linux machine, blow it onto a microSD (replace '2015-11-21-raspbian-jessie.img' with the filename you downloaded above):
     <pre> sudo dd if=2015-11-21-raspbian-jessie.img of=/dev/sdc bs=1M </pre>
 * After the light stops blinking, move it to the rpi and power up.
     <pre>ssh pi@raspberrypi.local</pre>
