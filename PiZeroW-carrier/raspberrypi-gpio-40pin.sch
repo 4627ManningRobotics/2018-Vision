@@ -28,8 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:PiZeroW-carrier-cache
-LIBS:raspberrrypi_hat-cache
+LIBS:ba06cc0wfp-e2ct
 EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500

@@ -1,4 +1,4 @@
-update=Tuesday, December 05, 2017 'AMt' 06:30:02 AM
+update=Tuesday, December 05, 2017 'AMt' 07:19:40 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -68,3 +68,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
+LibName30=lib_sch/ba06cc0wfp-e2ct
