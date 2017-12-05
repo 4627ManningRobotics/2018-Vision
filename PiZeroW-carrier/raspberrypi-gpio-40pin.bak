@@ -128,7 +128,7 @@ Wire Wire Line
 Connection ~ 5750 4600
 Text Notes 5300 5700 0    118  ~ 24
 Mounting Holes
-Text Notes 1600 1975 0    118  ~ 24
+Text Notes 2045 1875 0    118  ~ 24
 40-Pin HAT Connector
 Text Label 1150 4150 0    60   ~ 0
 GND
@@ -151,33 +151,33 @@ P3V3_HAT
 Wire Wire Line
 	2350 2250 1150 2250
 Wire Wire Line
-	2850 2850 4050 2850
+	3550 2850 4750 2850
 Wire Wire Line
-	2850 3150 4050 3150
+	3550 3150 4750 3150
 Wire Wire Line
-	2850 3550 4050 3550
+	3550 3550 4750 3550
 Wire Wire Line
-	2850 3650 4050 3650
+	3550 3650 4750 3650
 Wire Wire Line
-	2850 3850 4050 3850
-Text Label 4050 2850 2    60   ~ 0
+	3550 3850 4750 3850
+Text Label 4750 2850 2    60   ~ 0
 GND
-Text Label 4050 3150 2    60   ~ 0
+Text Label 4750 3150 2    60   ~ 0
 GND
-Text Label 4050 3650 2    60   ~ 0
+Text Label 4750 3650 2    60   ~ 0
 GND
-Text Label 4050 3550 2    60   ~ 0
+Text Label 4750 3550 2    60   ~ 0
 SCL
-Text Label 4050 3850 2    60   ~ 0
+Text Label 4750 3850 2    60   ~ 0
 GND
-Text Label 4050 2450 2    60   ~ 0
+Text Label 4750 2450 2    60   ~ 0
 GND
 Wire Wire Line
-	2850 2450 4050 2450
+	3550 2450 4750 2450
 Wire Wire Line
-	2850 2350 4050 2350
+	3550 2350 4750 2350
 Wire Wire Line
-	2850 2250 4050 2250
+	3550 2250 4750 2250
 Text Notes 7150 4950 0    60   ~ 0
 HAT spec indicates to NEVER\npower the 3.3V pins on the Raspberry Pi \nfrom the HAT header. Only connect the 3.3V\npower from the Pi if the HAT does not have\n3.3V on board.\n\nIF you are designing a board that could\neither be powered by the Pi or from the HAT\nthe jumpers here can be used.\n\nIn most cases, either design the HAT \nto provide the 5V to the Pi and use the\nprotection circuit above OR power the\nHAT from the Pi and directly connect\nthe P3V3 and P5V to the P3V3_HAT and P5V_HAT\npins.
 Text Notes 850  1250 0    100  ~ 0
@@ -201,21 +201,21 @@ NoConn ~ 2350 3750
 NoConn ~ 2350 3850
 NoConn ~ 2350 3950
 NoConn ~ 2350 4050
-NoConn ~ 2850 4150
-NoConn ~ 2850 4050
-NoConn ~ 2850 3950
-NoConn ~ 2850 3750
-NoConn ~ 2850 3450
-NoConn ~ 2850 3350
-NoConn ~ 2850 3250
-NoConn ~ 2850 3050
-NoConn ~ 2850 2950
-NoConn ~ 2850 2750
-NoConn ~ 2850 2650
-NoConn ~ 2850 2550
-Text Label 4050 2350 2    60   ~ 0
+NoConn ~ 3550 4150
+NoConn ~ 3550 4050
+NoConn ~ 3550 3950
+NoConn ~ 3550 3750
+NoConn ~ 3550 3450
+NoConn ~ 3550 3350
+NoConn ~ 3550 3250
+NoConn ~ 3550 3050
+NoConn ~ 3550 2950
+NoConn ~ 3550 2750
+NoConn ~ 3550 2650
+NoConn ~ 3550 2550
+Text Label 4750 2350 2    60   ~ 0
 P5V_HAT
-Text Label 4050 2250 2    60   ~ 0
+Text Label 4750 2250 2    60   ~ 0
 P5V_HAT
 Text HLabel 1490 2850 0    60   Input ~ 0
 PiDisable
@@ -263,6 +263,17 @@ F 1 "Hole_3mm_PTH" H 6540 6280 60  0000 C CNN
 F 2 "" H 6440 6430 60  0001 C CNN
 F 3 "" H 6440 6430 60  0001 C CNN
 	1    6540 6430
+	1    0    0    -1  
+$EndComp
+$Comp
+L PI40HAT J?
+U 1 1 5A26CB8A
+P 2950 2250
+F 0 "J?" H 3300 2350 50  0000 C CNN
+F 1 "PI40HAT" H 2650 2350 50  0000 C CNN
+F 2 "OX40_Module_Header" H 2950 2450 50  0000 C CNN
+F 3 "" H 2250 2250 50  0000 C CNN
+	1    2950 2250
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
