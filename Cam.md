@@ -92,7 +92,7 @@ Reference URLs:
 	sleep 2
 	\# Uncomment for USB camera
 	\#env LD_LIBRARY_PATH=/usr/local/lib: mjpg\_streamer -o "output\_http.so -w /usr/local/www -p 1180" -i "input\_uvc.so -f 15 -r 320x200 -y -n" &
-	env LD_LIBRARY_PATH=/usr/local/lib: mjpg\_streamer -o "output\_http.so -w /home/pi/vision/mjpg-streamer/mjpg-streamer-experimental/www -p 1180" -i "input\_raspicam.so -x 320 -y 200 -fps 15" &
+	env LD\_LIBRARY\_PATH=/home/pi/vision/mjpg-streamer/mjpg-streamer-experimental:$LD\_LIBRARY\_PATH /home/pi/vision/mjpg-streamer/mjpg-streamer-experimental/mjpg\_streamer -o "output_http.so -w /home/pi/vision/mjpg-streamer/mjpg-streamer-experimental/www -p 1180" -i "input\_raspicam.so -x 320 -y 200 -fps 15" &
 	fi
 	EOT
 	</pre>
