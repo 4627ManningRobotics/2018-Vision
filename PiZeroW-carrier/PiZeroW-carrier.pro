@@ -1,4 +1,4 @@
-update=Tuesday, December 05, 2017 'AMt' 07:19:40 AM
+update=Tuesday, December 05, 2017 'AMt' 08:50:51 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -69,3 +69,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=lib_sch/ba06cc0wfp-e2ct
+LibName31=lib_sch/raspberrypi_hat

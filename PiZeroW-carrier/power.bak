@@ -29,6 +29,8 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:ba06cc0wfp-e2ct
+LIBS:raspberrypi_hat
+LIBS:PiZeroW-carrier-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
