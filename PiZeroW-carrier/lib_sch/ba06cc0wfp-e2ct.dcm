@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BA06CC0WFP-E2CT
+D 1000 mA Low Dropout Voltage Regulator, Fixed Output 6.0V, TO-252-5
+K 1000mA 1A LDO Regulator Fixed Positive
+F http://rohmfs.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/baxxdd0-e.pdf
+$ENDCMP
+#
+#End Doc Library
