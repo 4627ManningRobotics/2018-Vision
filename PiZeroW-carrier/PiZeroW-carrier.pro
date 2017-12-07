@@ -1,4 +1,4 @@
-update=Tuesday, December 05, 2017 'AMt' 08:50:51 AM
+update=Thursday, December 07, 2017 'AMt' 05:43:59 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,16 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=lib_sch
@@ -70,3 +60,13 @@ LibName28=contrib
 LibName29=valves
 LibName30=lib_sch/ba06cc0wfp-e2ct
 LibName31=lib_sch/raspberrypi_hat
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

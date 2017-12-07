@@ -173,7 +173,7 @@ Wire Wire Line
 	5190 2575 5190 2215
 Text HLabel 3495 2730 0    60   Input ~ 0
 PiDisable
-Text HLabel 5190 2215 0    60   Input ~ 0
+Text HLabel 5190 1915 2    60   Input ~ 0
 +5V
 Text HLabel 3880 2300 0    60   Input ~ 0
 Batt
@@ -312,4 +312,15 @@ Wire Wire Line
 	5705 4840 5870 4840
 Wire Wire Line
 	5870 4840 5870 4670
+$Comp
+L D_Schottky D6
+U 1 1 5A293905
+P 5190 2065
+F 0 "D6" H 5190 2165 50  0000 C CNN
+F 1 "D_Schottky" H 5190 1965 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA_Handsoldering" H 5190 2065 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/diodes-incorporated/B130-13-F/B130-FDICT-ND/815318" H 5190 2065 50  0001 C CNN
+	1    5190 2065
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
