@@ -1,0 +1,54 @@
+
+	import org.opencv.core.Core;
+	import org.opencv.core.Mat;
+	import org.opencv.core.MatOfPoint;
+	import org.opencv.core.Scalar;
+	import org.opencv.imgproc.Imgproc;
+	import org.opencv.videoio.VideoCapture;
+	import org.opencv.videoio.Videoio;
+	import org.opencv.highgui.*;
+	
+	
+
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.StringWriter;
+import java.net.SocketTimeoutException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.util.Date;
+
+	import java.awt.geom.Rectangle2D;
+	import java.util.ArrayList;
+	import java.util.Collections;
+	import java.util.Comparator;
+
+	public class Vision2017_mjpeg {
+	    private static Rectangle2D.Double boundA, boundB;
+	    private static double areaA, areaB;
+	    private static double avgArea;
+	    private static double distanceRaw;
+	    private static double distanceFinal;
+
+	    public abstract class MjpegRunner implements Runnable {
+	        private static final String CONTENT_LENGTH = "Content-Length: ";
+	        private static final String CONTENT_TYPE = "Content-type: image/jpeg";
+	        private final URL url;
+	        private MjpegViewer viewer;
+	        private InputStream urlStream;
+	        private boolean isRunning = true; //TODO should be false by default
+
+	       
+	        }
+
+	        /**
+	         * Stop the loop, and allow it to clean up
+	         * @param isRunning 
+	         */
+	        public synchronized void stop(boolean isRunning) {
+	            isRunning = false;
+	        }
