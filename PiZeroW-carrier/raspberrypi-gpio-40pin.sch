@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:PiZeroW-carrier-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -51,7 +52,7 @@ U 1 1 5A256562
 P 6100 4650
 F 0 "J2" H 6100 4800 50  0000 C CNN
 F 1 "CONN_02X02" H 6100 4500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x02" H 6100 3450 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x02_Pitch2.54mm" H 6100 3450 50  0001 C CNN
 F 3 "" H 6100 3450 50  0000 C CNN
 	1    6100 4650
 	1    0    0    -1  
@@ -271,7 +272,7 @@ U 1 1 5A26CB8A
 P 2950 2250
 F 0 "J1" H 3300 2350 50  0000 C CNN
 F 1 "PI40HAT" H 2650 2350 50  0000 C CNN
-F 2 "OX40_Module_Header" H 2950 2450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x20_Pitch2.54mm" H 2950 2450 50  0000 C CNN
 F 3 "" H 2250 2250 50  0000 C CNN
 	1    2950 2250
 	1    0    0    -1  
