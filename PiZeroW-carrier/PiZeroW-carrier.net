@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/Users/samsh/Documents/GitHub/Vision2018/PiZeroW-carrier/PiZeroW-carrier.sch)
-    (date "2018-01-26 12:40:19 PM")
+    (date "2018-01-26 4:10:16 PM")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -360,16 +360,16 @@
         (pin (num 5) (name GND) (type power_in))
         (pin (num 6) (name shield) (type passive)))))
   (libraries
+    (library (logical conn)
+      (uri D:\KiCad\share\kicad\library\conn.lib))
     (library (logical PiZeroW-carrier-rescue)
       (uri C:\Users\samsh\Documents\GitHub\Vision2018\PiZeroW-carrier\PiZeroW-carrier-rescue.lib))
     (library (logical device)
       (uri D:\KiCad\share\kicad\library\device.lib))
-    (library (logical conn)
-      (uri D:\KiCad\share\kicad\library\conn.lib))
-    (library (logical ba06cc0wfp-e2ct)
-      (uri C:\Users\samsh\Documents\GitHub\Vision2018\PiZeroW-carrier\lib_sch\ba06cc0wfp-e2ct.lib))
     (library (logical raspberrypi_hat)
       (uri C:\Users\samsh\Documents\GitHub\Vision2018\PiZeroW-carrier\lib_sch\raspberrypi_hat.lib))
+    (library (logical ba06cc0wfp-e2ct)
+      (uri C:\Users\samsh\Documents\GitHub\Vision2018\PiZeroW-carrier\lib_sch\ba06cc0wfp-e2ct.lib))
     (library (logical PiZeroW-carrier-cache)
       (uri C:\Users\samsh\Documents\GitHub\Vision2018\PiZeroW-carrier\PiZeroW-carrier-cache.lib)))
   (nets

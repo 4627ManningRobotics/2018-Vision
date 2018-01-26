@@ -93,16 +93,6 @@ Wire Wire Line
 Wire Wire Line
 	3268 1745 3210 1745
 Wire Wire Line
-	1900 1916 2122 1916
-Wire Wire Line
-	2122 1916 2122 2760
-Wire Wire Line
-	2122 2760 4827 2760
-Wire Wire Line
-	4827 2760 4826 1917
-Wire Wire Line
-	4826 1917 4630 1917
-Wire Wire Line
 	4630 2090 4686 2090
 Wire Wire Line
 	4686 2090 4686 2582
@@ -112,4 +102,18 @@ Wire Wire Line
 	1945 2582 1945 2082
 Wire Wire Line
 	1945 2082 1900 2082
+Wire Wire Line
+	4630 1917 5118 1917
+Wire Wire Line
+	5118 1917 5118 1107
+Wire Wire Line
+	5118 1107 3424 1107
+Wire Wire Line
+	3424 1107 3424 2484
+Wire Wire Line
+	3424 2484 2036 2484
+Wire Wire Line
+	2036 2484 2037 1916
+Wire Wire Line
+	2037 1916 1900 1916
 $EndSCHEMATC
