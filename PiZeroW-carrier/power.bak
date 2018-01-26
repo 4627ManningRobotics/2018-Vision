@@ -170,7 +170,7 @@ Wire Wire Line
 	5080 2575 5190 2575
 Wire Wire Line
 	5190 2575 5190 2215
-Text HLabel 3400 2700 0    60   Input ~ 0
+Text HLabel 3500 2725 0    60   Input ~ 0
 PiDisable
 Text HLabel 5190 1915 2    60   Input ~ 0
 +5V
@@ -328,6 +328,6 @@ Wire Wire Line
 	3452 2699 3452 2725
 Wire Wire Line
 	3452 2725 3494 2725
-Text HLabel 7985 2975 0    60   Input ~ 0
+Text HLabel 7985 2975 0    60   Output ~ 0
 LEDEnable
 $EndSCHEMATC
