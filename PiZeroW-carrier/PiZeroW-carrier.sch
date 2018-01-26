@@ -55,7 +55,7 @@ F2 "Batt" I R 1900 2210 60
 F3 "GND" I R 1900 1740 60 
 F4 "+6V" I R 1900 1300 60 
 F5 "+5V" I R 1900 1435 60 
-F6 "LEDEnable" I R 1900 2081 60 
+F6 "LEDEnable" I R 1900 2082 60 
 F7 "PiDisable" I R 1900 1916 60 
 $EndSheet
 $Sheet
@@ -74,7 +74,7 @@ F1 "raspberrypi-gpio-40pin.sch" 60
 F2 "+5V" I R 4630 1400 60 
 F3 "GND" I R 4630 1745 60 
 F4 "PiDisable" I R 4630 1917 60 
-F5 "LEDEnable" O R 4630 2091 60 
+F5 "LEDEnable" I R 4630 2090 60 
 $EndSheet
 $Sheet
 S 5860 1200 1020 1320
@@ -82,4 +82,38 @@ U 5A26AECC
 F0 "USB" 60
 F1 "USB.sch" 60
 $EndSheet
+Wire Wire Line
+	1900 1740 2179 1740
+Wire Wire Line
+	2179 1740 2178 2420
+Wire Wire Line
+	2178 2420 3268 2420
+Wire Wire Line
+	3268 2420 3268 1745
+Wire Wire Line
+	3268 1745 3210 1745
+Wire Wire Line
+	4630 2090 4686 2090
+Wire Wire Line
+	4686 2090 4686 2582
+Wire Wire Line
+	4686 2582 1945 2582
+Wire Wire Line
+	1945 2582 1945 2082
+Wire Wire Line
+	1945 2082 1900 2082
+Wire Wire Line
+	4630 1917 5118 1917
+Wire Wire Line
+	5118 1917 5118 1107
+Wire Wire Line
+	5118 1107 3424 1107
+Wire Wire Line
+	3424 1107 3424 2484
+Wire Wire Line
+	3424 2484 2036 2484
+Wire Wire Line
+	2036 2484 2037 1916
+Wire Wire Line
+	2037 1916 1900 1916
 $EndSCHEMATC
