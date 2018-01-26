@@ -97,8 +97,6 @@ Wire Wire Line
 Connection ~ 1165 1915
 Text HLabel 1165 1210 0    60   Input ~ 0
 +6V
-Text HLabel 2370 2030 2    60   Input ~ 0
-GND
 $Comp
 L LED_RGB-RESCUE-PiZeroW-carrier D3
 U 1 1 5A259049
@@ -150,8 +148,6 @@ Wire Wire Line
 Connection ~ 4790 1970
 Text HLabel 4790 1265 0    60   Input ~ 0
 +6V
-Text HLabel 5995 2085 2    60   Input ~ 0
-GND
 $Comp
 L LED_RGB-RESCUE-PiZeroW-carrier D4
 U 1 1 5A259067
@@ -203,8 +199,6 @@ Wire Wire Line
 Connection ~ 6585 2000
 Text HLabel 6585 1295 0    60   Input ~ 0
 +6V
-Text HLabel 7790 2115 2    60   Input ~ 0
-GND
 $Comp
 L LED_RGB-RESCUE-PiZeroW-carrier D5
 U 1 1 5A259105
@@ -256,6 +250,12 @@ Wire Wire Line
 Connection ~ 8375 1970
 Text HLabel 8375 1265 0    60   Input ~ 0
 +6V
+Text HLabel 5995 2085 2    60   Input ~ 0
+GND
+Text HLabel 7790 2115 2    60   Input ~ 0
+GND
 Text HLabel 9580 2085 2    60   Input ~ 0
+GND
+Text HLabel 2370 2030 2    60   Input ~ 0
 GND
 $EndSCHEMATC

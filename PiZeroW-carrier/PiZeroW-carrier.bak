@@ -55,7 +55,7 @@ F2 "Batt" I R 1900 2210 60
 F3 "GND" I R 1900 1740 60 
 F4 "+6V" I R 1900 1300 60 
 F5 "+5V" I R 1900 1435 60 
-F6 "PiDisable" I R 1900 1916 60 
+F6 "PiDisable" I R 1900 1885 60 
 F7 "LEDEnable" I R 1900 2075 60 
 $EndSheet
 $Sheet
@@ -81,9 +81,7 @@ F0 "USB" 60
 F1 "USB.sch" 60
 $EndSheet
 Wire Wire Line
-	1890 1910 2290 1910
-Wire Wire Line
-	2290 1910 2290 2695
+	2295 1885 2290 2695
 Wire Wire Line
 	2290 2695 4860 2695
 Wire Wire Line
@@ -91,13 +89,25 @@ Wire Wire Line
 Wire Wire Line
 	4860 1910 4630 1910
 Wire Wire Line
-	1900 2085 2235 2085
+	1900 2075 2235 2075
 Wire Wire Line
-	2235 2085 2235 2740
+	2235 2075 2235 2740
 Wire Wire Line
 	2235 2740 4925 2740
 Wire Wire Line
 	4925 2740 4925 2055
 Wire Wire Line
 	4925 2055 4630 2055
+Wire Wire Line
+	3210 1725 3305 1730
+Wire Wire Line
+	3305 1730 3305 2420
+Wire Wire Line
+	3305 2420 2185 2420
+Wire Wire Line
+	2185 2420 2185 1740
+Wire Wire Line
+	2185 1740 1900 1740
+Wire Wire Line
+	2295 1885 1900 1885
 $EndSCHEMATC

@@ -97,8 +97,6 @@ Wire Wire Line
 Connection ~ 1165 1915
 Text HLabel 1165 1210 0    60   Input ~ 0
 +6V
-Text HLabel 2370 2030 2    60   Input ~ 0
-GND
 $Comp
 L LED_RGB-RESCUE-PiZeroW-carrier D3
 U 1 1 5A259049
@@ -150,8 +148,6 @@ Wire Wire Line
 Connection ~ 4790 1970
 Text HLabel 4790 1265 0    60   Input ~ 0
 +6V
-Text HLabel 5995 2085 2    60   Input ~ 0
-GND
 $Comp
 L LED_RGB-RESCUE-PiZeroW-carrier D4
 U 1 1 5A259067
@@ -203,8 +199,6 @@ Wire Wire Line
 Connection ~ 6585 2000
 Text HLabel 6585 1295 0    60   Input ~ 0
 +6V
-Text HLabel 7790 2115 2    60   Input ~ 0
-GND
 $Comp
 L LED_RGB-RESCUE-PiZeroW-carrier D5
 U 1 1 5A259105
@@ -256,6 +250,48 @@ Wire Wire Line
 Connection ~ 8375 1970
 Text HLabel 8375 1265 0    60   Input ~ 0
 +6V
-Text HLabel 9580 2085 2    60   Input ~ 0
-GND
+$Comp
+L GND #PWR?
+U 1 1 5A6B4DB4
+P 2370 2030
+F 0 "#PWR?" H 2370 1780 50  0001 C CNN
+F 1 "GND" H 2370 1880 50  0000 C CNN
+F 2 "" H 2370 2030 50  0001 C CNN
+F 3 "" H 2370 2030 50  0001 C CNN
+	1    2370 2030
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A6B4F46
+P 5995 2085
+F 0 "#PWR?" H 5995 1835 50  0001 C CNN
+F 1 "GND" H 5995 1935 50  0000 C CNN
+F 2 "" H 5995 2085 50  0001 C CNN
+F 3 "" H 5995 2085 50  0001 C CNN
+	1    5995 2085
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A6B4F84
+P 7790 2115
+F 0 "#PWR?" H 7790 1865 50  0001 C CNN
+F 1 "GND" H 7790 1965 50  0000 C CNN
+F 2 "" H 7790 2115 50  0001 C CNN
+F 3 "" H 7790 2115 50  0001 C CNN
+	1    7790 2115
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A6B5009
+P 9580 2085
+F 0 "#PWR?" H 9580 1835 50  0001 C CNN
+F 1 "GND" H 9580 1935 50  0000 C CNN
+F 2 "" H 9580 2085 50  0001 C CNN
+F 3 "" H 9580 2085 50  0001 C CNN
+	1    9580 2085
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
