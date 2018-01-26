@@ -192,6 +192,6 @@ F 3 "" H 2250 2250 50  0000 C CNN
 	1    2950 2250
 	1    0    0    -1  
 $EndComp
-Text HLabel 1495 2750 0    60   Output ~ 0
+Text HLabel 1495 2750 0    60   Input ~ 0
 LEDEnable
 $EndSCHEMATC
