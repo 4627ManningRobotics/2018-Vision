@@ -100,59 +100,6 @@ Text HLabel 1165 1210 0    60   Input ~ 0
 Text HLabel 2370 2030 2    60   Input ~ 0
 GND
 $Comp
-L LED_RGB-RESCUE-PiZeroW-carrier D2
-U 1 1 5A258F33
-P 3745 1745
-F 0 "D2" H 3745 2170 50  0000 C CNN
-F 1 "LED_QBLP679E" H 3745 2095 50  0000 C CNN
-F 2 "lib_fp:5050" H 3875 1335 50  0001 C CNN
-F 3 "QBLP679E-IGK" H 3745 1695 50  0001 C CNN
-	1    3745 1745
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4165 1545 4165 2060
-Wire Wire Line
-	4165 1945 3945 1945
-$Comp
-L R R5
-U 1 1 5A258F3B
-P 3125 1945
-F 0 "R5" V 3205 1945 50  0000 C CNN
-F 1 "150" V 3125 1945 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 3055 1945 50  0001 C CNN
-F 3 "" H 3125 1945 50  0000 C CNN
-	1    3125 1945
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3275 1945 3545 1945
-Wire Wire Line
-	2955 1945 2975 1945
-Wire Wire Line
-	3945 1545 4165 1545
-Connection ~ 4165 1945
-Wire Wire Line
-	3945 1745 4165 1745
-Wire Wire Line
-	4165 1745 4165 1740
-Connection ~ 4165 1740
-Wire Wire Line
-	3545 1545 3345 1545
-Wire Wire Line
-	3345 1545 3345 1945
-Connection ~ 3345 1945
-Wire Wire Line
-	3345 1745 3545 1745
-Connection ~ 3345 1745
-Wire Wire Line
-	2960 1240 2960 1945
-Connection ~ 2960 1945
-Text HLabel 2960 1240 0    60   Input ~ 0
-+6V
-Text HLabel 4165 2060 2    60   Input ~ 0
-GND
-$Comp
 L LED_RGB-RESCUE-PiZeroW-carrier D3
 U 1 1 5A259049
 P 5575 1770

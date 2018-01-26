@@ -46,87 +46,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L CONN_02X02 J2
-U 1 1 5A256562
-P 6100 4650
-F 0 "J2" H 6100 4800 50  0000 C CNN
-F 1 "CONN_02X02" H 6100 4500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x02_Pitch2.54mm" H 6100 3450 50  0001 C CNN
-F 3 "" H 6100 3450 50  0000 C CNN
-	1    6100 4650
-	1    0    0    -1  
-$EndComp
-Text Label 5250 4600 0    60   ~ 0
-P3V3
-Text Label 5250 4700 0    60   ~ 0
-P5V
-Wire Wire Line
-	5250 4600 5850 4600
-Wire Wire Line
-	5250 4700 5850 4700
-Text Label 6950 4600 2    60   ~ 0
-P3V3_HAT
-Text Label 6950 4700 2    60   ~ 0
-P5V_HAT
-Wire Wire Line
-	6350 4600 6950 4600
-Wire Wire Line
-	6350 4700 6950 4700
-Text Notes 5450 4250 0    60   ~ 0
-FLEXIBLE POWER SELECTION
-$Comp
-L R R9
-U 1 1 5A256571
-P 6100 4300
-F 0 "R9" V 6180 4300 50  0000 C CNN
-F 1 "DNP" V 6100 4300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6030 4300 50  0001 C CNN
-F 3 "" H 6100 4300 50  0001 C CNN
-F 4 "Yageo" H -9450 -10050 50  0001 C CNN "MFR"
-F 5 "RC0402JR-0722RL" H -9450 -10050 50  0001 C CNN "MPN"
-F 6 "Digikey" H -9450 -10050 50  0001 C CNN "SPR"
-F 7 "311-22JRCT-ND" H -9450 -10050 50  0001 C CNN "SPN"
-F 8 "" H -9450 -10050 50  0001 C CNN "SPURL"
-	1    6100 4300
-	0    1    1    0   
-$EndComp
-$Comp
-L R R10
-U 1 1 5A256572
-P 6100 4950
-F 0 "R10" V 6180 4950 50  0000 C CNN
-F 1 "DNP" V 6100 4950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6030 4950 50  0001 C CNN
-F 3 "" H 6100 4950 50  0001 C CNN
-F 4 "Yageo" H -9450 -9400 50  0001 C CNN "MFR"
-F 5 "RC0402JR-0722RL" H -9450 -9400 50  0001 C CNN "MPN"
-F 6 "Digikey" H -9450 -9400 50  0001 C CNN "SPR"
-F 7 "311-22JRCT-ND" H -9450 -9400 50  0001 C CNN "SPN"
-F 8 "" H -9450 -9400 50  0001 C CNN "SPURL"
-	1    6100 4950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5750 4700 5750 4950
-Wire Wire Line
-	5750 4950 5950 4950
-Connection ~ 5750 4700
-Wire Wire Line
-	6250 4950 6400 4950
-Wire Wire Line
-	6400 4950 6400 4700
-Connection ~ 6400 4700
-Wire Wire Line
-	6400 4600 6400 4300
-Wire Wire Line
-	6400 4300 6250 4300
-Connection ~ 6400 4600
-Wire Wire Line
-	5950 4300 5750 4300
-Wire Wire Line
-	5750 4300 5750 4600
-Connection ~ 5750 4600
 Text Notes 5300 5700 0    118  ~ 24
 Mounting Holes
 Text Notes 2045 1875 0    118  ~ 24
@@ -183,10 +102,6 @@ Text Notes 7150 4950 0    60   ~ 0
 HAT spec indicates to NEVER\npower the 3.3V pins on the Raspberry Pi \nfrom the HAT header. Only connect the 3.3V\npower from the Pi if the HAT does not have\n3.3V on board.\n\nIF you are designing a board that could\neither be powered by the Pi or from the HAT\nthe jumpers here can be used.\n\nIn most cases, either design the HAT \nto provide the 5V to the Pi and use the\nprotection circuit above OR power the\nHAT from the Pi and directly connect\nthe P3V3 and P5V to the P3V3_HAT and P5V_HAT\npins.
 Text Notes 850  1250 0    100  ~ 0
 This is based on the official Raspberry Pi spec to be able to call an extension board a HAT.\nhttps://github.com/raspberrypi/hats/blob/master/designguide.md
-Text HLabel 5250 4700 0    60   Input ~ 0
-+5V
-Text HLabel 1495 2750 0    60   Input ~ 0
-LEDEnable
 Wire Wire Line
 	1495 2750 2350 2750
 NoConn ~ 2350 2350
@@ -277,4 +192,6 @@ F 3 "" H 2250 2250 50  0000 C CNN
 	1    2950 2250
 	1    0    0    -1  
 $EndComp
+Text HLabel 1495 2750 0    60   Output ~ 0
+LEDEnable
 $EndSCHEMATC
