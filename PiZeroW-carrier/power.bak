@@ -110,8 +110,6 @@ Text HLabel 9330 2185 0    60   Input ~ 0
 +6V
 Text HLabel 8015 2270 0    60   Input ~ 0
 Batt
-Text HLabel 9265 2925 0    60   Input ~ 0
-GND
 $Comp
 L BA06CC0WFP-E2CT U1
 U 1 1 5A257C1F
@@ -176,8 +174,6 @@ Text HLabel 5190 1915 2    60   Input ~ 0
 +5V
 Text HLabel 3880 2300 0    60   Input ~ 0
 Batt
-Text HLabel 5130 2955 0    60   Input ~ 0
-GND
 $Comp
 L R R3
 U 1 1 5A257C7E
