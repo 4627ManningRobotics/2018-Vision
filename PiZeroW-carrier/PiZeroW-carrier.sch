@@ -55,7 +55,7 @@ F2 "Batt" I R 1900 2210 60
 F3 "GND" I R 1900 1740 60 
 F4 "+6V" I R 1900 1300 60 
 F5 "+5V" I R 1900 1435 60 
-F6 "LEDEnable" I R 1900 2082 60 
+F6 "LEDEnable" O R 1900 2082 60 
 F7 "PiDisable" O R 1900 1916 60 
 $EndSheet
 $Sheet
@@ -74,7 +74,7 @@ F1 "raspberrypi-gpio-40pin.sch" 60
 F2 "+5V" I R 4630 1400 60 
 F3 "GND" I R 4630 1745 60 
 F4 "PiDisable" O R 4630 1917 60 
-F5 "LEDEnable" I R 4630 2090 60 
+F5 "LEDEnable" O R 4630 2090 60 
 $EndSheet
 $Sheet
 S 5860 1200 1020 1320
