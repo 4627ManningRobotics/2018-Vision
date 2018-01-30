@@ -68,14 +68,6 @@ F 3 "" H 8015 2240 50  0000 C CNN
 	1    8015 2240
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8015 2240 8015 2545
-Wire Wire Line
-	8015 2545 8315 2545
-Wire Wire Line
-	7630 2695 8315 2695
-Wire Wire Line
-	7630 2695 7630 2210
 $Comp
 L GND #PWR02
 U 1 1 5A25448E
@@ -98,14 +90,6 @@ F 3 "" H 9265 2980 50  0000 C CNN
 	1    9265 2980
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9265 2695 9265 2980
-Wire Wire Line
-	8765 2895 8765 2985
-Wire Wire Line
-	9215 2545 9330 2545
-Wire Wire Line
-	9330 2545 9330 2185
 Text HLabel 9330 2185 0    60   Input ~ 0
 +6V
 Text HLabel 8015 2270 0    60   Input ~ 0
@@ -134,12 +118,6 @@ F 3 "" H 3880 2270 50  0000 C CNN
 	1    3880 2270
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3880 2270 3880 2575
-Wire Wire Line
-	3880 2575 4180 2575
-Wire Wire Line
-	3495 2725 4180 2725
 $Comp
 L GND #PWR05
 U 1 1 5A257C30
@@ -162,16 +140,6 @@ F 3 "" H 5130 3010 50  0000 C CNN
 	1    5130 3010
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5130 2725 5130 3010
-Wire Wire Line
-	4630 2925 4630 3015
-Wire Wire Line
-	5080 2575 5190 2575
-Wire Wire Line
-	5190 2575 5190 2215
-Text HLabel 3400 2700 0    60   Input ~ 0
-PiDisable
 Text HLabel 5190 1915 2    60   Input ~ 0
 +5V
 Text HLabel 3880 2300 0    60   Input ~ 0
@@ -189,9 +157,6 @@ F 3 "" H 7630 2060 50  0000 C CNN
 	1    7630 2060
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7985 2695 7985 2975
-Connection ~ 7985 2695
 $Comp
 L R R1
 U 1 1 5A257E80
@@ -214,8 +179,6 @@ F 3 "" H 3495 1405 50  0000 C CNN
 	1    3495 1405
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3495 1405 3495 1505
 $Comp
 L R R2
 U 1 1 5A257FAE
@@ -230,12 +193,12 @@ $EndComp
 $Comp
 L SW_PUSH SW1
 U 1 1 5A258078
-P 3495 2105
-F 0 "SW1" H 3360 2220 50  0000 C CNN
-F 1 "SW_PUSH" H 3485 2025 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_TL3342" H 3495 2105 50  0001 C CNN
-F 3 "" H 3495 2105 50  0000 C CNN
-	1    3495 2105
+P 3485 2095
+F 0 "SW1" H 3350 2210 50  0000 C CNN
+F 1 "SW_PUSH" H 3475 2015 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_TL3342" H 3485 2095 50  0001 C CNN
+F 3 "" H 3485 2095 50  0000 C CNN
+	1    3485 2095
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -249,8 +212,6 @@ F 3 "" H 3495 3440 50  0000 C CNN
 	1    3495 3440
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3495 3345 3495 3440
 $Comp
 L +BATT #PWR09
 U 1 1 5A268E4D
@@ -262,11 +223,6 @@ F 3 "" H 7630 1810 50  0000 C CNN
 	1    7630 1810
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7630 1810 7630 1910
-Wire Wire Line
-	3495 2405 3495 3045
-Connection ~ 3495 2725
 $Comp
 L BARREL_JACK CON1
 U 1 1 5A269E3E
@@ -289,13 +245,6 @@ F 3 "" H 5870 5135 50  0000 C CNN
 	1    5870 5135
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5870 4940 5870 5135
-Wire Wire Line
-	5705 5040 5870 5040
-Wire Wire Line
-	5705 4940 5870 4940
-Connection ~ 5870 5040
 $Comp
 L +BATT #PWR011
 U 1 1 5A26A0AC
@@ -307,10 +256,6 @@ F 3 "" H 5870 4670 50  0000 C CNN
 	1    5870 4670
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5705 4840 5870 4840
-Wire Wire Line
-	5870 4840 5870 4670
 $Comp
 L D_Schottky D6
 U 1 1 5A293905
@@ -322,12 +267,67 @@ F 3 "https://www.digikey.ca/product-detail/en/diodes-incorporated/B130-13-F/B130
 	1    5190 2065
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3401 2699 3452 2699
-Wire Wire Line
-	3452 2699 3452 2725
-Wire Wire Line
-	3452 2725 3494 2725
 Text HLabel 7985 2975 0    60   Input ~ 0
 LEDEnable
+Wire Wire Line
+	8015 2240 8015 2545
+Wire Wire Line
+	8015 2545 8315 2545
+Wire Wire Line
+	7630 2695 8315 2695
+Wire Wire Line
+	7630 2695 7630 2210
+Wire Wire Line
+	9265 2695 9265 2980
+Wire Wire Line
+	8765 2895 8765 2985
+Wire Wire Line
+	9215 2545 9330 2545
+Wire Wire Line
+	9330 2545 9330 2185
+Wire Wire Line
+	3880 2270 3880 2575
+Wire Wire Line
+	3880 2575 4180 2575
+Wire Wire Line
+	3490 2720 4180 2725
+Wire Wire Line
+	5130 2725 5130 3010
+Wire Wire Line
+	4630 2925 4630 3015
+Wire Wire Line
+	5080 2575 5190 2575
+Wire Wire Line
+	5190 2575 5190 2215
+Wire Wire Line
+	7985 2695 7985 2975
+Connection ~ 7985 2695
+Wire Wire Line
+	3495 1405 3495 1505
+Wire Wire Line
+	3495 3345 3495 3440
+Wire Wire Line
+	7630 1810 7630 1910
+Wire Wire Line
+	3485 2395 3495 3045
+Connection ~ 3490 2720
+Wire Wire Line
+	5870 4940 5870 5135
+Wire Wire Line
+	5705 5040 5870 5040
+Wire Wire Line
+	5705 4940 5870 4940
+Connection ~ 5870 5040
+Wire Wire Line
+	5705 4840 5870 4840
+Wire Wire Line
+	5870 4840 5870 4670
+Wire Wire Line
+	3490 2720 3440 2720
+Wire Wire Line
+	3440 2720 3440 2690
+Wire Wire Line
+	3440 2690 3390 2690
+Text HLabel 3390 2690 0    60   Input ~ 0
+PIDisable
 $EndSCHEMATC
