@@ -133,8 +133,6 @@ Text Label 4750 2350 2    60   ~ 0
 P5V_HAT
 Text Label 4750 2250 2    60   ~ 0
 P5V_HAT
-Text HLabel 1490 2850 0    60   Input ~ 0
-PiDisable
 Wire Wire Line
 	1490 2850 2350 2850
 $Comp
@@ -194,4 +192,6 @@ F 3 "" H 2250 2250 50  0000 C CNN
 $EndComp
 Text HLabel 1495 2750 0    60   Output ~ 0
 LEDEnable
+Text HLabel 1490 2850 0    60   Input ~ 0
+PIDisable
 $EndSCHEMATC
