@@ -1,24 +1,33 @@
 
 public class MathCalc {
 	 
-	private static final double distanceConstant = 0 ;
+	
+	public MathCalc() {
+		
+	}
+	
+	private static final double distanceConstant = 1;
 	private static double top;
 	private static double middle;
 	private static double end;  
-	
-	
+   
+    	
+	 
+	 
+
+
 		
 	
-	public static double getDistance(double pixelMesurement) {
+	public static double getDistance(double widthDistance ) {
 		
-		return (distanceConstant * pixelMesurement) ;	
+		return (distanceConstant * widthDistance) ;	
 		// this is the way we collect  the distances we need for the next formula
 		
 	}
 	
-	public static double getAngle ( int pixelMesurementA, int pixelMesurementB){
-		top =(getDistance(Math.sqrt( pixelMesurementA)) )+ (getDistance( Math.sqrt(pixelMesurementB)))-36;
-				middle= top/ 2*((getDistance(pixelMesurementA))*(getDistance(pixelMesurementB)));
+	public static double getAngle ( double widthDistanceA, double widthDistanceB){
+		top =(getDistance(Math.sqrt( widthDistanceA)) )+ (getDistance( Math.sqrt(widthDistanceB)))-36;
+				middle= top/ 2*((getDistance(widthDistanceA))*(getDistance(widthDistanceB)));
 				end = (Math.acos(middle));
 				return end;
 						

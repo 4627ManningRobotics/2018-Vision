@@ -1,6 +1,3 @@
-package org.usfirst.frc.team4627.robot.commands;
-
-
 
 import org.opencv.core.Core;
 
@@ -32,7 +29,7 @@ import java.util.Comparator;
 
 
 
-public class vision {
+public class Vision {
 
     private static Rectangle2D.Double boundA, boundB;
 
@@ -55,26 +52,12 @@ public class vision {
    private static double angleY;
 
    
+private static Rectangle2D.Double bound;
 
 
 
-    
-
-    
-
-    
-
-    
-
-    
-
-
-
-    private static Rectangle2D.Double bound;
-
-
-
-    private static NetworkTable nwtable;
+    @SuppressWarnings("deprecation")
+	private static NetworkTable nwtable;
 
 
 
@@ -190,7 +173,7 @@ public class vision {
 
      
 
-        nwtable.putNumber("angleX", angleX );
+        nwtable.putNumber("angleX", angleX());
 
         nwtable.putNumber("angleY", angleY);
 
@@ -208,7 +191,9 @@ public class vision {
 
     }
     public static double angleX() {
-    	return MathCalc.getAngle(vision.boundA.width, vision.boundB.width);
+    	MathCalc mc = new MathCalc();
+    	System.out.println(mc.getAngle(Vision.boundA.width, Vision.boundB.width));
+    	return mc.getAngle(Vision.boundA.width, Vision.boundB.width);
     	 }
     
     
@@ -273,4 +258,4 @@ public class vision {
 
     }
 
-}}
+}
