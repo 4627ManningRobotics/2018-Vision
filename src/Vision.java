@@ -59,11 +59,11 @@ private static Rectangle2D.Double bound;
     @SuppressWarnings("deprecation")
 	private static NetworkTable nwtable;
 
-
-
     public static void run() {
 
         init();
+    	
+    	//Thread v = new Thread();
 
 
 
@@ -219,7 +219,7 @@ private static Rectangle2D.Double bound;
 
 
     private static void init() {
-
+    	
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 
         camera = new VideoCapture(1);

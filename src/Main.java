@@ -1,4 +1,5 @@
 
+
 import org.opencv.core.*;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.videoio.VideoCapture;
@@ -13,28 +14,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-
-	private static Mat hsvThresholdOutput = new Mat();
-	private static Mat frame = new Mat();
-
+	private static Mat hsvThresholdOutput;
+	private static Mat frame;
+	
 	private static ArrayList<MatOfPoint> findContoursOutput = new ArrayList<MatOfPoint>();
 	private static ArrayList<MatOfPoint> filterContoursOutput = new ArrayList<MatOfPoint>();
 
 	public static void main(String[] args) {
 		System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
-
+		
+		hsvThresholdOutput = new Mat();
+		frame = new Mat(200,200, CvType.CV_8UC3); // 200,200, CvType.CV_8UC3
 		VideoCapture camera = new VideoCapture(1);
 		camera.set(Videoio.CAP_PROP_AUTO_EXPOSURE, 1);
 		camera.set(Videoio.CAP_PROP_EXPOSURE, -11);
 
-		frame = new Mat();
 		camera.read(frame);
+		
+		System.out.println("Width: " + frame.width() + " Height: " + frame.height()); 
 
-		JFrame window = new JFrame("Test");
-		window.setSize(frame.width(), frame.height());
+	JFrame window = new JFrame("Test");
+	window.setSize(frame.width(), frame.height());
 		window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-		BufferedImage img = new BufferedImage(frame.width(), frame.height(), BufferedImage.TYPE_3BYTE_BGR);
+	BufferedImage img = new BufferedImage(frame.width(), frame.height(), BufferedImage.TYPE_3BYTE_BGR);
 
 		JPanel panel = new JPanel() {
 			public void paintComponent(Graphics g) {

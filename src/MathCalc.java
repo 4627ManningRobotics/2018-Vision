@@ -27,7 +27,8 @@ public class MathCalc {
 	
 	public static double getAngle ( double widthDistanceA, double widthDistanceB){
 		top =(getDistance(Math.sqrt( widthDistanceA)) )+ (getDistance( Math.sqrt(widthDistanceB)))-36;
-				middle= top/ 2*((getDistance(widthDistanceA))*(getDistance(widthDistanceB)));
+			
+		middle= top/ 2*((getDistance(widthDistanceA))*(getDistance(widthDistanceB)));
 				end = (Math.acos(middle));
 				return end;
 						

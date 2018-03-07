@@ -3,11 +3,11 @@
 	<classpathentry kind="src" path="pi3_vision/src"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="mjpg-streamer/mjpg-streamer-experimental/www/cambozola.jar"/>
-	<classpathentry kind="lib" path="C:/Users/robo/wpilib/java/current/lib/opencv.jar"/>
-	<classpathentry kind="lib" path="C:/Users/robo/wpilib/java/current/lib/cscore.jar"/>
-	<classpathentry kind="lib" path="C:/Users/robo/wpilib/java/current/lib/ntcore.jar"/>
-	<classpathentry kind="lib" path="C:/Users/robo/wpilib/java/current/lib/WPILib.jar"/>
-	<classpathentry kind="lib" path="C:/Users/robo/wpilib/java/current/lib/wpiutil.jar"/>
+	<classpathentry exported="true" kind="lib" path="mjpg-streamer/mjpg-streamer-experimental/www/cambozola.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/robo/wpilib/java/current/lib/cscore.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/robo/wpilib/java/current/lib/ntcore.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/robo/wpilib/java/current/lib/WPILib.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/robo/wpilib/java/current/lib/wpiutil.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/OpenCV"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
